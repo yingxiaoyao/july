@@ -6,16 +6,56 @@
 </head>
 <style type="text/css">
     .teacher-info {
+        background-size: 100% 100%;
+        height: 364px;
+        width: 273px;
+        color: #fff;
+        font-weight: 900;
+        position: relative;
+    }
+    .name-bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        height: 100px;
+        opacity: .5;
+        transition: height .5s linear;
+    }
+    .teacher-name {
+        text-align: center;
+        line-height: 53px;
+    }
+    .teacher-tip-line {
+        white-space: nowrap;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-indent: 1em;
+        transition: .5s linear;
+    }
+    .teacher-tip {
+        display: none;
+    }
 
+    .teacher-info:hover .name-bg {
+        height: 364px;
+    }
+    .teacher-info:hover .teacher-tip-line {
+        white-space: normal;
+        /*text-overflow: ellipsis;
+        overflow: hidden;*/
+        text-indent: 1em;
     }
 </style>
 <body>
 <div class="teacher-li" style="width: 242px;">
-    <div class="teacher-info" style="background-image: url(./img/5754f8583a878.jpg)">
-        <div class="name-bg"></div>
-        <div class="teacher-name">管博士</div>
-        <div class="teacher-tip-line">加州大学洛杉矶分校（UCLA）数学博士，中科大数学学士，五年数学课讲课经验，目前在华尔街一家金融公司做数据处理等工作。</div>
-        <div class="teacher-tip">加州大学洛杉矶分校（UCLA）数学博士，中科大数学学士，五年数学课讲课经验，目前在华尔街一家金融公司做数据处理等工作。</div>
+    <div class="teacher-info" style="background-image: url(./img/5716f3a580003.jpg)">
+        <div class="name-bg">
+            <div class="teacher-name">管博士</div>
+            <div class="teacher-tip-line">加州大学洛杉矶分校（UCLA）数学博士，中科大数学学士，五年数学课讲课经验，目前在华尔街一家金融公司做数据处理等工作加州大学洛杉矶分校（UCLA）数学博士，中科大数学学士，五年数学课讲课经验，目前在华尔街一家金融公司做数据处理等工作加州大学洛杉矶分校（UCLA）数学博士，中科大数学学士，五年数学课讲课经验，目前在华尔街一家金融公司做数据处理等工作加州大学洛杉矶分校（UCLA）数学博士，中科大数学学士，五年数学课讲课经验，目前在华尔街一家金融公司做数据处理等工作。</div>
+        </div>
     </div>
 </div>
 </body>
