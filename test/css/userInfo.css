@@ -1,0 +1,15 @@
+body {
+    background : teal;
+    font-size : 16px;
+    font-family: 'Microsoft YaHei', 'Helvetica Neue', 'STHeiti', Helvetica, Arial, sans-serif;
+}
+#content {
+    width : 65%;
+    margin : 0 auto;
+}
+.panel-heading {
+      font-size : 18px;
+      color : #333;
+      text-align : center;
+      background : #f4f4f4;
+  }

@@ -1,0 +1,94 @@
+h2{
+    font-size: 20px;
+    color: #18a5e5;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d0d6d9;
+    margin-bottom: 0;
+}
+
+.course-type-box{
+    padding: 20px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #d0d6d9;
+    margin-bottom: 20px;
+}
+.course-type-box li{
+    display: inline-block;
+    margin-right: 24px;
+    position: relative;
+}
+.course-type-box li i {
+    position: absolute;
+    bottom: -8px;
+    z-index: 10;
+    left: calc(50% - 7.5px);
+    color: #18a5e5;
+    display: none;
+}
+.course-type-title{
+    color: #909090;
+    padding: 0 6px 0 20px;
+}
+
+
+.list_cat{
+    background: #18a5e5;
+    border-radius : 2px;
+}
+.list_cat-have {
+    margin-bottom : 55px;
+}
+.list_cat a{
+    color: #fff;
+}
+.list_cat a:hover{
+    color: #fff;
+}
+
+.course_info_box{
+    width: 250px;
+    margin: 0 auto;
+}    
+
+.course-info-tip{
+    min-height: 17px;
+}
+
+.container a:focus{
+    outline:none;
+    text-decoration: none;
+}
+
+/*二级菜单*/
+.second-menu {
+    position: absolute;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    width: 289px;
+    display: none;
+    z-index: 10;
+    background: #fff;
+}
+.second-menu li {
+    line-height: 36px;
+    padding: 0 10px;
+    margin: 0;
+}
+.second-menu a {
+    color : #5a5a5a;
+    padding: 2px 5px;
+}
+.second-menu a:hover {
+    color : #18a5e5;
+}
+
+.second-menu .list_cat_second {
+    background : #18a5e5;
+    color : #fff;
+    border-radius : 2px;
+}
+.second-menu .list_cat_second:hover {
+    color : #fff;
+}

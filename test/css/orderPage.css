@@ -1,0 +1,423 @@
+body {
+    background : #f4f4f4;
+    font-family: 'Microsoft YaHei','Helvetica Neue', 'STHeiti', Helvetica, Arial, sans-serif;;
+    font-size : 16px;
+}
+.main-wrapper{
+    margin: 40px 0;
+}
+ul {
+    list-style: none;
+    padding : 0;
+    margin : 0;
+}
+
+h2 {
+    font-size: 18px;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    line-height: 70px;
+}
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main {
+    background : #fff;
+    padding: 0 40px 40px;
+}
+/*order*/
+.info {
+    background: #fafafa;
+    padding: 20px 0;
+    margin: 0 -40px;
+    border-top : 1px solid #eee;
+    border-bottom : 1px solid #eee;
+    position: relative;
+}
+.info div {
+    line-height: 40px;
+    padding: 0 20px;
+}
+.btn-compile {
+    background : #18b4ed;
+    width : 66px;
+    height : 30px;
+    color : #fff;
+    font-size :16px;
+    line-height: 16px;
+    border-radius : 4px;
+    margin-top: 90px;
+    border: none;
+    outline: none;
+    float: right;
+    margin-right: 25px;
+}
+.btn-compile:hover {
+    background :#2cc8f2;
+}
+.btn-compile:active {
+    background : #2ca6e0;
+}
+.courseInfo {
+    padding : 0 15px;
+}
+.courseInfo>div {
+    border-bottom :1px solid #ddd;
+    padding : 0;
+}
+.courseInfo h2{
+    border-bottom : 1px solid #ddd;
+}
+
+.courseSynopsis {
+    padding:30px 0;
+}
+.courseSynopsis::after {
+    content :'';
+    display: block;
+    clear : both;
+}
+.courseSynopsis img {
+    width : 120px;
+    height : 90px;
+    display: block;
+    float: left;
+}
+.courseSynopsis .courseSynopsis-right{
+    float : left;
+    padding: 0 20px;
+}
+.courseSynopsis h3 {
+    font-size : 18px;
+    color : #333;
+}
+
+.courseSynopsis p {
+    font-size : 16px;
+    color : #666;
+}
+.courseInfo span {
+    line-height: 150px;
+    font-size : 16px;
+    color : #666;
+}
+.privilege-info-right {
+    text-align: right;
+}
+.use-privilege {
+    color :#18b4ed;
+    font-size : 16px;
+    line-height: 70px;
+}
+.use-privilege:hover, .use-privilege:focus{
+    text-decoration: none;
+    color : #18b4ed;
+}
+.form-control {
+    display: inline-block;
+}
+.privilege-code {
+    width : 150px;
+    height : 40px;
+    border : 1px solid #ddd;
+    color : #333;
+    vertical-align: middle;
+}
+.btn-notarize {
+    width: 88px;
+    height: 30px;
+    line-height: 16px;
+    background: #18b4ed;
+    color: #fff;
+    margin-left: 20px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+.btn-notarize:hover {
+    background : #2cc8f2;
+    color:#fff;
+}
+.btn-notarize:active {
+    background : #2ca6e0;
+}
+
+.exempt-price {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    line-height: 18px;
+    display: none;
+}
+.exempt-error {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff2121;
+    line-height: 18px;
+    display: none;
+}
+.privilege-list {
+    width : 280px;
+    min-width : 200px;
+    border : 1px solid #ddd;
+}
+.privilege-list > li:nth-child(odd) {
+    background : #fafafa;
+}
+.privilege-list > li {
+    height: 40px;
+    padding: 0 22px;
+    line-height: 40px;
+    color: #666;
+    font-size: 16px;
+}
+.privilege-list > li .privilege-list-p {
+    float : right;
+}
+.privilege-list+p {
+    color: #666;
+    line-height: 25px;
+    margin: 20px 0 0;
+}
+.use-privilege-info {
+    display: none;
+}
+/*.use-privilege-info .exempt-price {
+    display: none;
+}*/
+.col-md-6 {
+    position: static;
+}
+.payment-info {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+.payment-info .payment-price {
+    line-height: 18px;
+    color: #333;
+    font-size: 18px;
+    margin: 30px 0;
+}
+.payment-info .payment-way {
+    margin: 40px 0;
+    float : right;
+    overflow: hidden;
+}
+.pay-zhifubao,.pay-weixin {
+    border: 1px solid #ddd;
+    float: left;
+    position: relative;
+}
+.pay-zhifubao>.pay-choose,.pay-weixin>.pay-choose {
+    position :absolute;
+    top:0;
+    right : 0 ;
+    display: none;
+}
+.payment-way .payment-way-selected {
+    border : 2px solid #1dc988;
+}
+
+.btn-payment {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    background: #fc583d;
+    border: none;
+    border-radius: 4px;
+    outline : none;
+}
+.btn-payment:hover {
+    background : #ff725b;
+}
+.btn-payment:active {
+    background : #f0462a;
+}
+
+/*form*/
+.separator {
+    color : #ff2121;
+}
+.from-header {
+    text-align: center;
+    font-size : 18px;
+}
+.word-space {
+    letter-spacing: 30px;
+}
+#form-save {
+    letter-spacing: 5px;
+}
+.panel {
+    margin-bottom: 0;
+}
+.panel-body {
+    padding : 40px 0;
+}
+.save {
+    margin: 40px 0 0;
+}
+button.close {
+    padding:10px;
+    outline: none;
+}
+#dalog {
+    background : rgba(0,0,0,.5);
+    z-index: 10;
+    height : 100%;
+    width : 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/*支付成功页*/
+.success {
+    text-align: right;
+    padding: 0 21px;
+}
+.pay-main {
+    background : #fff;
+    padding: 0 40px 40px;
+    border-top : 4px solid #1cca86;
+}
+.pay-info {
+    padding : 50px 0;
+}
+.success-info {
+
+}
+.success-info div{
+    font-size : 24px;
+    color : #1dc988;
+    line-height: 50px;
+}
+.success-info p {
+    font-size : 18px;
+    color : #666;
+}
+.success-info p span{
+    color : #1dc988;
+}
+.two-code {
+    text-align: center;
+}
+.APP {
+    font-size: 18px;
+    color: #666;
+    line-height: 78px;
+    text-indent: 6px;
+}
+.line {
+    height : 1px;
+    background : #ddd;
+}
+.course-recommend {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin: 40px 0;
+}
+.course-recommend-head {
+    margin: -12px 0 0;
+}
+
+/*支付选择页面*/
+.h2_float {
+    float : left;
+}
+.orderCode {
+    line-height: 74px;
+    color : #999;
+}
+.payWay {
+    border-bottom : 1px solid #eee;
+    overflow: hidden;
+}
+.orderWarning {
+    font-size: 16px;
+    color : #fa952f;
+    line-height: 96px;
+}
+.pay-warning {
+    height: 180px;
+}
+.payment-way > div {
+    margin:0 40px 40px 0;
+}
+
+@media(max-width : 991px) {
+    .courseInfo span {
+        line-height : 50px;
+    }
+    .courseInfo h2{
+        line-height: 50px;
+        border-bottom : none;
+    }
+    .courseSynopsis {
+        padding: 10px 0 25px;
+    }
+    .privilege-info-right {
+        text-align : left;
+    }
+    .payment-info .payment-way {
+        float : none;
+    }
+    .payment-info {
+        position: static;
+    }
+    .pay-warning {
+        height : auto;
+    }
+
+}
+@media(max-width: 768px){
+    .btn-compile {
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    .pay-info {
+        padding : 0px 0 50px;
+    }
+    .line {
+        display: none;
+    }
+    .success {
+        text-align: left;
+    }
+    .orderWarning {
+        line-height: 40px;
+    }
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        margin: 165px auto;
+    }
+}
+
+@media(max-width : 424px) {
+    .btn-notarize {
+        margin-top : 10px;
+    }
+    .privilege-list {
+        width : 100%;
+    }
+    .orderCode {
+        line-height: 40px;
+    }
+}
+@media(max-width : 467px) {
+    .courseSynopsis .courseSynopsis-right {
+        padding : 0 60px 0 0;
+    }
+}
+@media(max-width : 375px) {
+    .courseSynopsis .courseSynopsis-right {
+        padding : 0;
+    }
+}
