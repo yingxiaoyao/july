@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无限级CSS+JS导航菜单</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.nav .item').bind({
+            mouseenter : function(){
+                $(this).addClass('item-active').children('.nav').show();
+            },
+            mouseleave : function(){
+                $(this).removeClass('item-active').children('.nav').hide();
+            }
+        });
+    });
+</script>
+</body>
+</html>

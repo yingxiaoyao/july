@@ -1,26 +1,193 @@
-<!doctype html>
-<html lang="en">
-<head>
+<html lang="zh-CN"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,Chrome=1">
+    <title>七月在线 - 专注数据领域的在线教育</title>
+    <meta name="generator" content="Bootply">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="UTF-8">
-    <title>无限级CSS+JS导航菜单</title>
-    <style type="text/css">
-
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/entrance.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<div class="container max_width">
+    <h2>全部课程</h2>
+</div>
+<div class="container max_width">
+    <ol class="course-type-box course-classify">
+        <li class="course-type-title">类别：</li>
+        <li class="" data-category="all-course">
+            <label class=""><a href="###">全部</a></label>
+        </li>
+        <li data-category="数学">
+            <label class="list_cat"><i class="iconfont">&#xe601;</i><a href="###">数学</a></label>
+        </li>
+        <li data-category="算法">
+            <label class=""><i class="iconfont">&#xe601;</i><a href="###">算法</a></label>
+            <ul class="col-md-6 second-menu">
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+            </ul>
+        </li>
+        <li data-category="求职">
+            <label class=""><i class="iconfont">&#xe601;</i><a href="###">求职</a></label>
+            <ul class="col-md-6 second-menu">
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+            </ul>
+        </li>
+        <li data-category="机器学习">
+            <label class=""><i class="iconfont">&#xe601;</i><a href="###">机器学习</a></label>
+            <ul class="col-md-6 second-menu">
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+            </ul>
+        </li>
+        <li data-category="深度学习">
+            <label class=""><i class="iconfont">&#xe601;</i><a href="###">深度学习</a></label>
+            <ul class="second-menu">
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+            </ul>
+        </li>
+        <li data-category="数据挖掘">
+            <label class=""><i class="iconfont">&#xe601;</i><a href="###">数据挖掘</a></label>
+           <!-- <ul class="second-menu">
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+            </ul>-->
+        </li>
+        <li data-category="数据分析">
+            <label class=""><i class="iconfont">&#xe601;</i><a href="###">数据分析</a></label>
+            <ul class="second-menu">
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机分类</a></li>
+                <li><a href="###">机类</a></li>
+            </ul>
+        </li>
+        <li data-category="CV">
+            <label class=""><i class="iconfont">&#xe601;</i><a href="###">CV</a></label>
+        </li>
+        <li data-category="Spark">
+            <label class=""><i class="iconfont">&#xe601;</i><a href="###">Spark</a></label>
+            <!--<ul class="second-menu">
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+            </ul>-->
+        </li>
+        <li data-category="量化交易">
+            <label class="">
+                <i class="iconfont">&#xe601;</i>
+                <a href="###">量化交易</a>
+            </label>
+            <ul class="second-menu">
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器类</a></li>
+                <li><a href="###">机器分类</a></li>
+            </ul>
+        </li>
+        <li data-category="NLP">
+            <label class=""><i class="iconfont">&#xe601;</i><a href="###">NLP</a></label>
+            <ul class="col-md-6 second-menu">
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机器分类</a></li>
+                <li><a href="###">机类</a></li>
+                <li><a href="###">机器分类</a></li>
+            </ul>
+        </li>
+    </ol>
+</div>
 
-<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
-<script type="text/javascript">
-    $(function(){
-        $('.nav .item').bind({
-            mouseenter : function(){
-                $(this).addClass('item-active').children('.nav').show();
-            },
-            mouseleave : function(){
-                $(this).removeClass('item-active').children('.nav').hide();
-            }
+
+<meta charset="UTF-8">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+    var courseClassify = $(".course-classify");
+    var lables = courseClassify.children('li').children('label');
+    var secondMenu = $('.second-menu');
+    var secondMenuLi = secondMenu.children('li');
+    //console.log(lables);
+    for (let i = 0; i < lables.length; i++) {
+        lables[i].courseId = i;
+        $(lables[i]).click(function(){
+            selectedCourse(this);
+            sessionStorage.setItem('courseId',this.courseId);
         });
-    });
+
+    }
+
+    for (let i = 0; i < secondMenuLi.length; i++) {
+        secondMenuLi[i].secondCourseId = i;
+        $(secondMenuLi[i]).click(function(){
+            selectedSecondCourse(this);
+            sessionStorage.setItem('secondCourseId',this.secondCourseId);
+        })
+
+    }
+
+    var courseId = sessionStorage.getItem('courseId');
+    var secondCourseId = sessionStorage.getItem('secondCourseId');
+    console.log(courseId);
+    if($(lables[courseId]).siblings('.second-menu').length > 0) {
+        selectedCourse(lables[courseId]);
+        $(lables[courseId]).attr('class','list_cat');
+        $(secondMenuLi[secondCourseId]).children('a').attr('class','list_cat_second');
+    }
+
+
+
+    function selectedSecondCourse(secondCourse) {
+        $(secondCourse).children('a').attr('class','list_cat_second');
+        $(secondCourse).siblings().children('.list_cat_second').removeAttr('class');
+        $(secondCourse).parent().parent().siblings().children('.second-menu').children().children('.list_cat_second').removeAttr('class');
+    }
+
+    function selectedCourse (course) {
+        var secondMeun = $(course).siblings('.second-menu');
+        var li = $(course).parent();
+        //console.log(secondMeun);
+        if(secondMeun.length >= 1) {
+            li.attr('class','list_cat-have');
+            li.siblings('.list_cat-have').removeAttr('class');
+            $(course).attr('class','list_cat');
+            li.siblings().children('.list_cat').removeAttr('class');
+            $(course).children('.iconfont').css('display','block');
+            li.siblings().children('label').children('.iconfont').css('display','none');
+            secondMeun.css('display','block');
+            li.siblings().children('.second-menu').css('display','none');
+
+            li.siblings().children('.second-menu').children().children('.list_cat_second').removeAttr('class');
+            var secondMeunLis = secondMeun.children('li');
+            var secondMeunLisWidth = 0;
+            for (var i = 0; i < secondMeunLis.length; i++) {
+                secondMeunLisWidth += $(secondMeunLis[i]).width()+20;
+            }
+            //console.log(secondMeunLisWidth);
+            var secondMeunMarginLeft = (secondMeun.width()/2)-(li.width()/2);
+            secondMeun.css({
+                'width': secondMeunLisWidth+40+'px',
+                'margin-left' : '-'+secondMeunMarginLeft+'px'
+            });
+
+        }else {
+            $(course).attr('class','list_cat');
+            li.siblings().children('.list_cat').removeAttr('class');
+            li.siblings('.list_cat-have').removeAttr('class');
+            li.siblings().children('label').children('.iconfont').css('display','none');
+            li.siblings().children('.second-menu').css('display','none');
+            li.siblings().children('.second-menu').children().children('.list_cat_second').removeAttr('class');
+        }
+    }
+
 </script>
-</body>
-</html>
