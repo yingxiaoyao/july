@@ -45,28 +45,27 @@
         #img1 {
             position:absolute;
         }
-        　　</style>
+　　</style>
 </head>
 <body>
 　　　　<div id="div1">
-　　　　　　<!-- 图片 -->
-　　　　　　<img src="img/5716f3a580003.jpg" alt="">
-　　　　　　<!-- 鼠标选中框 -->
-　　　　　　<span></span>
-　　　　　　<!-- 背景 -->
-　　　　　　<div class="show"></div>
-　　　　</div>
+    　　　　　　<!-- 图片 -->
+    　　　　　　<img src="img/5716f3a580003.jpg" alt="">
+    　　　　　　<!-- 鼠标选中框 -->
+    　　　　　　<span></span>
+    　　　　　　<!-- 背景 -->
+    　　　　　　<div class="show"></div>
+    　　　　</div>
 　　　　<div id="div2">
-　　　　　　<!-- 放大后的图片 -->
-　　　　　　<img id="img1" src="img/5716f3a580003.jpg" />
-　　　　</div>
+    　　　　　　<!-- 放大后的图片 -->
+    　　　　　　<img id="img1" src="img/5716f3a580003.jpg" />
+    　　　　</div>
 </body>
 <script>
 
 
     // 加载完成后显示
     window.onload=function () {
-        //console.log(document.getElementsByTagName('body')[0].innerHTML);
         var oDiv=document.getElementById('div1');
         var oShow=document.getElementsByClassName('show')[0];
         var oSpan=document.getElementsByTagName('span')[0];
